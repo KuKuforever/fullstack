@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    username: kukuforever
+    password: passw0rd
+    url: jdbc:oracle:thin:@testdb.cle5erwqlmmb.us-east-2.rds.amazonaws.com:1521:ORCL
+
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
