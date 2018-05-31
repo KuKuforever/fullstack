@@ -22,27 +22,24 @@ public class Post {
 
     public void setId(int id) { this.id = id; }
 
-    @Column
+    @Column(name="status")
     public String getStatus() { return status; }
 
+    public void setStatus(String status) { this.status = status; }
 
+    @Column(name="imageId")
+    public int getImageId() { return imageId; }
 
+    public void setImageId(int imageId) { this.imageId = imageId; }
 
-    public int getImageId() {
-        return imageId;
-    }
+    @Column(name="title")
+    public String getTitle() { return title; }
 
-    public void setImageId(int imageId) {
-        this.imageId = imageId;
-    }
+    public void setTitle(String title) { this.title = title; }
 
-    public String getTitle() {
-        return title;
-    }
+    @Column(name="posterId")
+    public int getPosterId() { return posterId; }
 
-    public int getPosterId() {
-        return posterId;
-    }
-
+    public void setPosterId(int posterId) { this.posterId = posterId; }
 
 }
